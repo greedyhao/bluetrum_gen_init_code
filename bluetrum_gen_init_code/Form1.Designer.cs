@@ -185,10 +185,10 @@ namespace gen_print_init
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(369, 343);
-            this.Controls.Add(this.checkedListBox4);
-            this.Controls.Add(this.checkedListBox3);
-            this.Controls.Add(this.checkedListBox2);
             this.Controls.Add(this.checkedListBox1);
+            this.Controls.Add(this.checkedListBox2);
+            this.Controls.Add(this.checkedListBox3);
+            this.Controls.Add(this.checkedListBox4);
             this.Controls.Add(this.clear_btn);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
