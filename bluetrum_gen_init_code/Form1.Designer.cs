@@ -109,14 +109,14 @@ namespace gen_print_init
             this.checkedListBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Items.AddRange(new object[] {
-            "BIT0",
-            "BIT1",
-            "BIT2",
-            "BIT3",
-            "BIT4",
-            "BIT5",
-            "BIT6",
-            "BIT7"});
+            "BIT(0)",
+            "BIT(1)",
+            "BIT(2)",
+            "BIT(3)",
+            "BIT(4)",
+            "BIT(5)",
+            "BIT(6)",
+            "BIT(7)"});
             this.checkedListBox1.Location = new System.Drawing.Point(12, 39);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(75, 196);
@@ -129,14 +129,14 @@ namespace gen_print_init
             this.checkedListBox2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.checkedListBox2.FormattingEnabled = true;
             this.checkedListBox2.Items.AddRange(new object[] {
-            "BIT0",
-            "BIT1",
-            "BIT2",
-            "BIT3",
-            "BIT4",
-            "BIT5",
-            "BIT6",
-            "BIT7"});
+            "BIT(0)",
+            "BIT(1)",
+            "BIT(2)",
+            "BIT(3)",
+            "BIT(4)",
+            "BIT(5)",
+            "BIT(6)",
+            "BIT(7)"});
             this.checkedListBox2.Location = new System.Drawing.Point(93, 39);
             this.checkedListBox2.Name = "checkedListBox2";
             this.checkedListBox2.Size = new System.Drawing.Size(75, 196);
@@ -148,14 +148,14 @@ namespace gen_print_init
             this.checkedListBox3.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.checkedListBox3.FormattingEnabled = true;
             this.checkedListBox3.Items.AddRange(new object[] {
-            "BIT0",
-            "BIT1",
-            "BIT2",
-            "BIT3",
-            "BIT4",
-            "BIT5",
-            "BIT6",
-            "BIT7"});
+            "BIT(0)",
+            "BIT(1)",
+            "BIT(2)",
+            "BIT(3)",
+            "BIT(4)",
+            "BIT(5)",
+            "BIT(6)",
+            "BIT(7)"});
             this.checkedListBox3.Location = new System.Drawing.Point(174, 39);
             this.checkedListBox3.Name = "checkedListBox3";
             this.checkedListBox3.Size = new System.Drawing.Size(75, 196);
@@ -167,14 +167,14 @@ namespace gen_print_init
             this.checkedListBox4.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.checkedListBox4.FormattingEnabled = true;
             this.checkedListBox4.Items.AddRange(new object[] {
-            "BIT0",
-            "BIT1",
-            "BIT2",
-            "BIT3",
-            "BIT4",
-            "BIT5",
-            "BIT6",
-            "BIT7"});
+            "BIT(0)",
+            "BIT(1)",
+            "BIT(2)",
+            "BIT(3)",
+            "BIT(4)",
+            "BIT(5)",
+            "BIT(6)",
+            "BIT(7)"});
             this.checkedListBox4.Location = new System.Drawing.Point(255, 39);
             this.checkedListBox4.Name = "checkedListBox4";
             this.checkedListBox4.Size = new System.Drawing.Size(75, 196);
@@ -196,7 +196,7 @@ namespace gen_print_init
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "生成初始化代码";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
