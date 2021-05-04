@@ -34,7 +34,7 @@ namespace gen_print_init
         {
             string[] portName = { "A", "B", "E", "F" };
             var msg = "";
-            foreach (Control control in this.Controls)
+            foreach (Control control in this.tabPage1.Controls)
             {
                 if (control is CheckedListBox)
                 {

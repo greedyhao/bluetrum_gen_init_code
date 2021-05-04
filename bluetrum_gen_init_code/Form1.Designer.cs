@@ -39,13 +39,17 @@ namespace gen_print_init
             this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
             this.checkedListBox3 = new System.Windows.Forms.CheckedListBox();
             this.checkedListBox4 = new System.Windows.Forms.CheckedListBox();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(75, 27);
             this.label1.TabIndex = 0;
@@ -55,7 +59,7 @@ namespace gen_print_init
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(93, 9);
+            this.label2.Location = new System.Drawing.Point(81, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 27);
             this.label2.TabIndex = 9;
@@ -65,7 +69,7 @@ namespace gen_print_init
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(174, 9);
+            this.label3.Location = new System.Drawing.Point(162, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(72, 27);
             this.label3.TabIndex = 18;
@@ -75,7 +79,7 @@ namespace gen_print_init
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(255, 9);
+            this.label4.Location = new System.Drawing.Point(243, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(72, 27);
             this.label4.TabIndex = 27;
@@ -84,7 +88,7 @@ namespace gen_print_init
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(12, 267);
+            this.button1.Location = new System.Drawing.Point(0, 258);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(123, 39);
             this.button1.TabIndex = 36;
@@ -95,7 +99,7 @@ namespace gen_print_init
             // clear_btn
             // 
             this.clear_btn.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.clear_btn.Location = new System.Drawing.Point(174, 267);
+            this.clear_btn.Location = new System.Drawing.Point(162, 258);
             this.clear_btn.Name = "clear_btn";
             this.clear_btn.Size = new System.Drawing.Size(123, 39);
             this.clear_btn.TabIndex = 37;
@@ -117,7 +121,7 @@ namespace gen_print_init
             "BIT(5)",
             "BIT(6)",
             "BIT(7)"});
-            this.checkedListBox1.Location = new System.Drawing.Point(12, 39);
+            this.checkedListBox1.Location = new System.Drawing.Point(0, 30);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(75, 196);
             this.checkedListBox1.TabIndex = 42;
@@ -137,7 +141,7 @@ namespace gen_print_init
             "BIT(5)",
             "BIT(6)",
             "BIT(7)"});
-            this.checkedListBox2.Location = new System.Drawing.Point(93, 39);
+            this.checkedListBox2.Location = new System.Drawing.Point(81, 30);
             this.checkedListBox2.Name = "checkedListBox2";
             this.checkedListBox2.Size = new System.Drawing.Size(75, 196);
             this.checkedListBox2.TabIndex = 43;
@@ -156,7 +160,7 @@ namespace gen_print_init
             "BIT(5)",
             "BIT(6)",
             "BIT(7)"});
-            this.checkedListBox3.Location = new System.Drawing.Point(174, 39);
+            this.checkedListBox3.Location = new System.Drawing.Point(162, 30);
             this.checkedListBox3.Name = "checkedListBox3";
             this.checkedListBox3.Size = new System.Drawing.Size(75, 196);
             this.checkedListBox3.TabIndex = 44;
@@ -175,31 +179,53 @@ namespace gen_print_init
             "BIT(5)",
             "BIT(6)",
             "BIT(7)"});
-            this.checkedListBox4.Location = new System.Drawing.Point(255, 39);
+            this.checkedListBox4.Location = new System.Drawing.Point(243, 30);
             this.checkedListBox4.Name = "checkedListBox4";
             this.checkedListBox4.Size = new System.Drawing.Size(75, 196);
             this.checkedListBox4.TabIndex = 45;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Location = new System.Drawing.Point(12, 12);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(343, 350);
+            this.tabControl1.TabIndex = 46;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.label1);
+            this.tabPage1.Controls.Add(this.checkedListBox1);
+            this.tabPage1.Controls.Add(this.label2);
+            this.tabPage1.Controls.Add(this.checkedListBox2);
+            this.tabPage1.Controls.Add(this.label3);
+            this.tabPage1.Controls.Add(this.checkedListBox3);
+            this.tabPage1.Controls.Add(this.label4);
+            this.tabPage1.Controls.Add(this.checkedListBox4);
+            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Controls.Add(this.clear_btn);
+            this.tabPage1.Location = new System.Drawing.Point(4, 29);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(335, 317);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "gpio";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(369, 343);
-            this.Controls.Add(this.checkedListBox1);
-            this.Controls.Add(this.checkedListBox2);
-            this.Controls.Add(this.checkedListBox3);
-            this.Controls.Add(this.checkedListBox4);
-            this.Controls.Add(this.clear_btn);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(367, 374);
+            this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "生成初始化代码";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -215,6 +241,8 @@ namespace gen_print_init
         private System.Windows.Forms.CheckedListBox checkedListBox2;
         private System.Windows.Forms.CheckedListBox checkedListBox3;
         private System.Windows.Forms.CheckedListBox checkedListBox4;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
     }
 }
 
