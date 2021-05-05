@@ -42,13 +42,16 @@ namespace gen_print_init
                     var index = control.Name.Substring(control.Name.Length - 1, 1);
                     var num = int.Parse(index) - 1;
                     var port = "GPIO" + portName[num];
-                    var fen = port + "FEN &= ~(" + gen_bits_code(clb) + ");\n";
-                    var de = port + "DE  |= (" + gen_bits_code(clb) + ");\n";
-                    var dir = port + "DIR &= ~(" + gen_bits_code(clb) + ");\n";
+                    var bits = gen_bits_code(clb);
+                    var fen = port + "FEN &= ~(" + bits + ");\n";
+                    var de = port + "DE  |= (" + bits + ");\n";
+                    var dir = port + "DIR &= ~(" + bits + ");\n";
+                    var io_reg = (this.checkBox1.Checked ? "CLR": "SET");
+                    var io = port + io_reg + " |= (" + bits + ");\n";
 
                     if (gen_bits_code(clb) != "")
                     {
-                        msg += fen + de + dir + "\n";
+                        msg += fen + de + dir + io + "\n";
                     }
                 }
             }
